@@ -1,0 +1,12 @@
+package Ops;
+import java.util.Scanner;
+
+public class ImparPar {
+
+	public static void main(String[] args) {
+		Scanner usuario = new Scanner(System.in);
+		
+		int entrada = usuario.nextInt();
+	}
+
+}

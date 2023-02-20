@@ -1,0 +1,13 @@
+package acoes;
+
+public class Main {
+	public class Pessoa
+	public void falar(String frase) {
+		this.nome = nome;
+		System.out.println("Pessoa ");
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+}

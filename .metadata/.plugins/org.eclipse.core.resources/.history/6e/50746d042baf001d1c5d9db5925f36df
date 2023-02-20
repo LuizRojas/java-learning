@@ -1,0 +1,19 @@
+package Ops;
+import java.util.Scanner;
+
+public class CondicaoSimples {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		int num1 = teclado.nextInt();
+		int num2 = teclado.nextInt();
+		
+		int numExemplo = 
+		
+		if (num1 >=) {
+			
+		}
+	}
+
+}

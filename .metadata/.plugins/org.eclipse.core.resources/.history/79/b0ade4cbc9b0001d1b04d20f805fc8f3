@@ -1,0 +1,43 @@
+package acoes;
+
+public class Pessoa {
+	private String nome;  // atributo privado da classe Pessoa: nome
+	private int idade;
+	private boolean falando;
+	private boolean cumprimentando;
+	
+	public Pessoa(String nome) {  // contrutor da classe
+		this.nome = nome;  // referencia o proprio nome do objeto dessa classe
+		this.idade = idade;
+		this.falando = false;  // estado inicial da variavel
+		this.cumprimentando = false;
+	}
+	
+	public void Falar(String texto) {
+		if (isFalando()) {
+			System.out.println(nome + " está cumprimentando!");
+		} else {
+			System.out.println(texto);
+		}
+	}
+	
+	public void Cumprimentar(Pessoa outraPessoa) {
+		System.out.println("Olá, " + outraPessoa.getNome() + "! Meu nome é " + nome);
+	}
+	
+	public void setFalando(boolean falando) {
+		this.falando = falando;
+	}
+	
+	public boolean isFalando() {
+		return falando;
+	}
+	
+	public String getNome() {  // getter de uma classe, retorna (pega) o valor de um atributo determinado pelo mesmo
+		return nome;
+	}
+	
+	public int getIdade() {
+		return idade;
+	}
+}

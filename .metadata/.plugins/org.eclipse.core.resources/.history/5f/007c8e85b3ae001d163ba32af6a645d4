@@ -1,0 +1,8 @@
+package Ops;
+import java.util.Scanner;
+
+public class SomarValores {
+	public static void main(String[] args) {
+		
+	}
+}

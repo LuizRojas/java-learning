@@ -1,0 +1,11 @@
+package acoes;
+
+public class Main {
+	public static void main(String[] args) {
+		Pessoa pessoa1 = new Pessoa("Luiz", 18);
+		Pessoa pessoa2 = new Pessoa();
+		
+		pessoa1.Cumprimentar(pessoa2);
+		pessoa2.Cumprimentar(pessoa1);
+	}
+}

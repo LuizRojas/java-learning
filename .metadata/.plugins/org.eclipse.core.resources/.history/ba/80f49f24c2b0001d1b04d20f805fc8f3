@@ -1,0 +1,12 @@
+package acoes;
+
+public class App {
+	this.nome = nome;
+	public void falar(String frase) {
+		System.out.println("Pessoa ");
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+}

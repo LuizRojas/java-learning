@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Ops.CondicaoSimples&apos; to &apos;CondicaoRelacionalELogica&apos;&#x0D;&#x0A;- Original project: &apos;OperacoesRelacionaisLogicos&apos;&#x0D;&#x0A;- Original element: &apos;Ops.CondicaoSimples&apos;&#x0D;&#x0A;- Renamed element: &apos;Ops.CondicaoRelacionalELogica&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CondicaoSimples&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Ops{CondicaoSimples.java[CondicaoSimples" matchStrategy="1" name="CondicaoRelacionalELogica" qualified="false" references="true" similarDeclarations="false" stamp="1676684302163" textual="false" version="1.0"/>
+</session>

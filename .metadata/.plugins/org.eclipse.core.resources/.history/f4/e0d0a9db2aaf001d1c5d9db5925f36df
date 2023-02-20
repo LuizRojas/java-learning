@@ -1,0 +1,11 @@
+package Ops;
+import java.util.Scanner;
+
+public class CondicaoSimples {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
