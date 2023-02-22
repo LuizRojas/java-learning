@@ -12,7 +12,7 @@ public class Animal {
 		this.peso = peso;
 		this.idade = idade;
 	}
-	
+
 	public void fazerSom() {
 		System.out.println("*Som de animal indescritivel*");
 	}
