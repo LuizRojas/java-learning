@@ -5,7 +5,7 @@ public class Cachorro extends Animal {
 	
 	// construtor da class
 	public Cachorro(String nome, String dono, double peso, int idade, String raca) {
-		super(nome, dono, peso, idade);
+		super(nome, dono, peso, idade);  // inicializando a classe pai (Animal)
 		this.raca = raca;
 	}
 	

@@ -5,6 +5,7 @@
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo.comments" value="false"/>
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo" value="true"/>
 	<item key="filters_last_used" value="filter_imports;"/>
+	<item key="ProjectSelectionDialog.show_all" value="true"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -72,11 +73,16 @@
 		<item key="expanded2" value="false"/>
 		<item key="expanded3" value="false"/>
 		<item key="expanded4" value="false"/>
-		<item key="expanded5" value="true"/>
+		<item key="expanded5" value="false"/>
 		<item key="expanded6" value="false"/>
 		<item key="expanded7" value="false"/>
 		<item key="expanded8" value="false"/>
 	</section>
 	<section name="RenameInformationPopup">
+	</section>
+	<section name="JavaBuildConfigurationBlock">
+		<item key="expanded0" value="false"/>
+		<item key="expanded1" value="false"/>
+		<item key="expanded2" value="false"/>
 	</section>
 </section>
