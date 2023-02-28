@@ -1,5 +1,0 @@
-package Ops;
-
-public class QuadradoDeUmValor {
-	public static void main(String[] args) {
-}

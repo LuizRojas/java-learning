@@ -1,7 +1,0 @@
-package acoes;
-
-public class App {
-	public void falar() {
-		System.out.println("");
-	}
-}

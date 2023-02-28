@@ -11,7 +11,7 @@ public class App {
 			for (int j = 0; j < zeros[i].length; j++) {
 				System.out.print(zeros[i][j] + " ");
 			}
-			System.out.println();
+			System.out.println();  // print vazio para pular para proxima linha
 		}
 	}
 
