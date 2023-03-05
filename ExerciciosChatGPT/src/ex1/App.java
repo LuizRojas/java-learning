@@ -7,7 +7,8 @@ package ex1;
 
 public class App {
 	public static void main(String[] args) {
-		Gato gato1 = new Gato("Miau miau!");
+		Gato gato1 = new Gato();
+		gato1.setSom("Miau miau");
 		gato1.emitirSom();
 	}	
 }

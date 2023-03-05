@@ -19,6 +19,7 @@ public class ContaBancaria {
 			System.out.println("Seu saldo é indisponível para esta operação");
 		} else {
 			setSaldo(getSaldo() - valorSaque);
+			System.out.println("Valor sacado com sucesso.\n");
 		}
 	}
 	
@@ -28,6 +29,7 @@ public class ContaBancaria {
 	
 	private void depositar(double valorDeposito) {
 		setSaldo(getSaldo() + valorDeposito);
+		System.out.println("Valor depositado com sucesso.\n");
 	}
 	
 	public void depositarValor(double valor) {

@@ -6,4 +6,5 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="entidades.Produto"/>
     <fullyQualifiedTypeName name="entidades.Bebida"/>
+    <fullyQualifiedTypeName name="ex2.ContaBancaria"/>
 </qualifiedTypeNameHistroy>
