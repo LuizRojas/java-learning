@@ -1,4 +1,5 @@
 package ex5;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Cliente extends Pessoa{
@@ -16,6 +17,9 @@ public class Cliente extends Pessoa{
 		
 		for (String compra : getCompras()) {
 			if (compra != null) {
+				if (!compra.isEmpty()) {
+					compras += (compras.isEmpty() ? "" : ", ");  // a partir de agora a primeira entrada não terá mais vírgula antes dela, mas as próximas sim
+				}
 				compras += compra;
 			}
 		}
@@ -23,6 +27,7 @@ public class Cliente extends Pessoa{
 		return "Suas compras: " + compras + "\nValor total gasto: " + getValorGasto();
 	}
 	
+	@Override
 	public void inserirInformacoes() {
 		setCompras();
 	}	
@@ -39,25 +44,30 @@ public class Cliente extends Pessoa{
 	    Scanner scanner = new Scanner(System.in);
 	    String[] comprasCliente = getCompras();
 	    int i = 0;
-
-	    while (true) {
-	        System.out.println("Digite a compra " + i + " (ou digite 'fim' para parar): ");
-	        String compra = scanner.next();
-
-	        if (compra.equalsIgnoreCase("fim")) {
-	            break;
-	        }
-
-	        comprasCliente[i] = compra;
-	        i++;
-
-	        if (i >= comprasCliente.length) {
-	            System.out.println("Limite máximo de compras atingido.");
-	            break;
-	        }
+	    
+	    // tratamento de erros, para quando não for necessário mais a entrada de dados
+	    try { 
+		    while (true) {
+		        System.out.println("Digite a compra " + i + " (ou digite 'fim' para parar): ");
+		        String compra = scanner.next();
+	
+		        if (compra.trim().equalsIgnoreCase("fim")) {
+		            break;
+		        }
+	
+		        comprasCliente[i] = compra;
+		        i++;
+	
+		        if (i >= comprasCliente.length) {
+		            System.out.println("Limite máximo de compras atingido.\n");
+		            break;
+		        }
+		    }
+	    } catch (NoSuchElementException e) {
+	    	System.out.println("Entrada inválida. Tente novamente.\n");
+	    } finally {
+	    	scanner.close();
 	    }
-
-	    scanner.close();
 	}
 	
 	public double getValorGasto() {
@@ -67,11 +77,4 @@ public class Cliente extends Pessoa{
 	private void setValorGasto(double novoValorGasto) {
 		this.valorGasto = novoValorGasto;
 	}
-
-	@Override
-	public void inserirInformacoes() {
-		// TODO Auto-generated method stub
-		
-	}
-	
 }
