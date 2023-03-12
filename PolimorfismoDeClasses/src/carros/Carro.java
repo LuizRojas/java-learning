@@ -21,8 +21,6 @@ public class Carro {
 		this.ano = ano;
 	}
 	
-	public void vender() {}
-	
 	public void ligar() {
 		if (isLigado()) {
 			System.out.println(marca + " " + modelo + " ja esta ligado.");
@@ -70,9 +68,6 @@ public class Carro {
 	public void acionarFreioDeMao(boolean acionar) {
 		setFreioDeMao(acionar);
 	}
-	
-	// sera feito depois
-	public void abastecer() {}  
 	
 	public String getModelo() {
 		return modelo;
